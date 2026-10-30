@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LWS Event Downloader</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <h1>Machine Event CSV</h1>
+    <label>Từ ngày <input id="from" type="date"></label>
+    <label>Đến ngày <input id="to" type="date"></label>
+    <div class="buttons">
+      <button id="start">Start / tiếp tục</button>
+      <button id="daily" class="secondary">Bật tự tải hằng ngày</button>
+      <button id="stop" class="secondary">Stop</button>
+      <button id="reset" class="secondary">Reset</button>
+    </div>
+    <button id="downloadLogs" class="secondary log-button">Tải file log chẩn đoán</button>
+    <p id="status">Mở trang Machine Event rồi chọn khoảng ngày.</p>
+    <p id="dailyStatus">Chưa có trạng thái tải tự động.</p>
+    <p class="hint">Bật tự tải hằng ngày một lần là đủ; không cần bấm Start. Start chỉ dùng tải thủ công hoặc tiếp tục lượt thủ công. Thông tin đăng nhập nằm trong content.js.</p>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

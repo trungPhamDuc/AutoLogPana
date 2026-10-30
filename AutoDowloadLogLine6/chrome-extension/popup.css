@@ -1,0 +1,13 @@
+* { box-sizing: border-box; }
+body { width: 320px; margin: 0; color: #172033; font: 14px Arial, sans-serif; }
+main { padding: 16px; }
+h1 { margin: 0 0 14px; font-size: 17px; }
+label { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 10px 0; }
+input { width: 150px; padding: 5px; }
+.buttons { display: flex; gap: 6px; margin-top: 14px; }
+button { flex: 1; padding: 8px 5px; border: 0; border-radius: 4px; background: #1769aa; color: white; cursor: pointer; }
+button.secondary { background: #e5eaf0; color: #172033; }
+button:disabled { opacity: .5; cursor: default; }
+.log-button { width: 100%; margin-top: 7px; }
+#status { min-height: 38px; margin: 13px 0 4px; overflow-wrap: anywhere; }
+.hint { margin: 6px 0 0; color: #536174; font-size: 12px; }

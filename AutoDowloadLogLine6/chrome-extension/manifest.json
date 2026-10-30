@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "LWS Machine Event Downloader",
+  "version": "1.6.2",
+  "description": "Tự động tải log Machine Event theo khoảng ngày hoặc lịch hằng ngày.",
+  "permissions": ["activeTab", "scripting", "storage", "alarms"],
+  "optional_permissions": ["contentSettings", "downloads"],
+  "optional_host_permissions": ["http://*/*", "https://*/*"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_title": "LWS Event Downloader",
+    "default_popup": "popup.html"
+  }
+}
